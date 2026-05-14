@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE CLUB PADEL — Reporte de Campaña</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Reporte de campaña Meta Ads para THE CLUB PADEL — Curso de Pádel Alto Nivel en Puebla. Resultados, métricas y proyecciones.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="THE CLUB PADEL — Reporte de Campaña">
+  <meta property="og:description" content="Campaña Meta Ads · Curso de Pádel Alto Nivel · Puebla, México">
+  <meta property="og:url" content="https://vgiorgana34.github.io/rpt-tcp-c1-2026/">
+  <meta property="og:image" content="https://aigenci.sirv.com/AIGENCI/Imagen%20Aigenci%20-%20Open%20Graph.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="THE CLUB PADEL — Reporte de Campaña">
+  <meta name="twitter:description" content="Campaña Meta Ads · Curso de Pádel Alto Nivel · Puebla, México">
+  <meta name="twitter:image" content="https://aigenci.sirv.com/AIGENCI/Imagen%20Aigenci%20-%20Open%20Graph.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6F4C9E;
+      --primary-deep: #1F1829;
+      --primary-hero: #2E2340;
+      --bg: #2E2340;
+      --bg-dark: #312740;
+      --accent: #FD327B;
+      --accent-deep: #D4165B;
+      --highlight: #5FCFFA;
+      --highlight-deep: #2FA9D6;
+      --surface: #FFFFFF;
+      --surface-soft: #EEECFF;
+      --surface-softer: #F6F4FF;
+      --on-dark: #FFFFFF;
+      --on-dark-90: rgba(255,255,255,0.90);
+      --on-dark-78: rgba(255,255,255,0.78);
+      --on-dark-75: rgba(255,255,255,0.75);
+      --on-dark-65: rgba(255,255,255,0.65);
+      --on-dark-55: rgba(255,255,255,0.55);
+      --on-dark-50: rgba(255,255,255,0.50);
+      --glass-surface: rgba(255,255,255,0.04);
+      --glass-surface-stat: rgba(255,255,255,0.06);
+      --glass-border: rgba(255,255,255,0.10);
+      --glass-border-stat: rgba(255,255,255,0.12);
+      --outline-dark: rgba(255,255,255,0.10);
+      --outline-dark-strong: rgba(255,255,255,0.15);
+      --rounded-sm: 12px;
+      --rounded: 22px;
+      --rounded-md: 18px;
+      --rounded-lg: 28px;
+      --rounded-xl: 36px;
+      --rounded-full: 9999px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    ::selection { background: rgba(111,76,158,0.25); }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--on-dark-90);
+      padding: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── LOADER ── */
+    .loader-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--primary-deep);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .loader-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .loader-mark {
+      width: 118px;
+      height: 118px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: loaderIn 0.9s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    .loader-mark img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 50%;
+      filter: drop-shadow(0 30px 60px rgba(111,76,158,0.55));
+      animation: loaderBreath 1.8s ease-in-out infinite;
+    }
+
+    .loader-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px solid rgba(253,50,123,0.5);
+      animation: loaderRing 1.8s ease-out infinite;
+    }
+
+    .loader-ring.alt {
+      border-color: rgba(95,207,250,0.5);
+      animation-delay: 0.9s;
+    }
+
+    .loader-tag {
+      margin-top: 46px;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.32em;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: loaderTagIn 1s 0.2s ease-out both;
+    }
+
+    .loader-tag .tag-dot {
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    @keyframes loaderIn {
+      from { transform: scale(0.82); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes loaderBreath {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    @keyframes loaderRing {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(1.7); opacity: 0; }
+    }
+
+    @keyframes loaderTagIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── STICKER ANIMATIONS ── */
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(4deg); }
+    }
+    @keyframes floatX {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(6px); }
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .sticker {
+      position: absolute;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .sticker-float-y { animation: floatY 6s ease-in-out infinite; }
+    .sticker-float-x { animation: floatX 7s ease-in-out infinite; }
+    .sticker-spin { animation: spinSlow 20s linear infinite; }
+
+    /* ── BODY FADE IN ── */
+    .page-content {
+      opacity: 0;
+      transition: opacity 0.5s ease 0.1s;
+    }
+    .page-content.visible {
+      opacity: 1;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--primary-hero);
+      border: 1px solid var(--outline-dark);
+      border-radius: var(--rounded-xl);
+      padding: 28px 36px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(600px 300px at 15% 20%, rgba(111,76,158,0.4), transparent 60%),
+        radial-gradient(400px 300px at 85% 70%, rgba(253,50,123,0.14), transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-left { position: relative; z-index: 1; }
+
+    .header-left h1 {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--on-dark);
+      margin-bottom: 6px;
+    }
+
+    .header-left h1 em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .header-left p {
+      font-size: 14px;
+      color: var(--on-dark-55);
+      font-weight: 500;
+    }
+
+    .header-right {
+      text-align: right;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-right .badge {
+      display: inline-block;
+      background: var(--accent);
+      padding: 6px 16px;
+      border-radius: var(--rounded-full);
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--on-dark);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .header-right .meta {
+      font-size: 13px;
+      color: var(--on-dark-50);
+    }
+
+    /* ── KPI CARDS ── */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: var(--glass-surface-stat);
+      border: 1px solid var(--glass-border-stat);
+      border-radius: var(--rounded-md);
+      padding: 22px 18px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px -10px rgba(111,76,158,0.35);
+    }
+
+    .kpi-card::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      right: -30px;
+      bottom: -30px;
+      background: radial-gradient(circle, rgba(253,50,123,0.2), transparent 70%);
+      pointer-events: none;
+    }
+
+    .kpi-card .kpi-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--on-dark-55);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .kpi-card .kpi-value {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--highlight);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .kpi-card .kpi-sub {
+      font-size: 12px;
+      color: var(--on-dark-50);
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* ── PANELS (glass cards) ── */
+    .panel {
+      background: var(--glass-surface);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--rounded-xl);
+      padding: 28px;
+      position: relative;
+    }
+
+    /* ── SECTION HEADER (eyebrow + display title) ── */
+    .section-header {
+      margin-bottom: 28px;
+    }
+
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--highlight);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .section-eyebrow span {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--highlight);
+    }
+
+    .section-bar {
+      width: 48px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin-bottom: 12px;
+    }
+
+    .section-display {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      line-height: 1.08;
+      color: var(--on-dark);
+      margin-bottom: 0;
+    }
+
+    .section-display em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .section-sub {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 15px;
+      color: var(--on-dark-55);
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* Legacy panel-title fallback */
+    .panel-title {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--highlight);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--outline-dark);
+    }
+
+    /* ── MAIN GRID ── */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .full-width { grid-column: 1 / -1; }
+
+    /* ── TABLE STYLES ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.03);
+      color: var(--on-dark-50);
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid var(--outline-dark);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: var(--on-dark-90);
+      font-weight: 500;
+    }
+
+    td.value {
+      font-weight: 700;
+      color: var(--on-dark);
+    }
+
+    td.highlight {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-weight: 900;
+      color: var(--highlight);
+      background: rgba(95,207,250,0.06);
+      border-radius: 4px;
+    }
+
+    /* ── INLINE BARS ── */
+    .bar-cell {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .inline-bar-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .inline-bar-track {
+      flex: 1;
+      background: rgba(255,255,255,0.06);
+      height: 22px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .inline-bar-target {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: rgba(111,76,158,0.35);
+      border-radius: 4px;
+    }
+
+    .inline-bar-actual {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-deep));
+      border-radius: 4px;
+      opacity: 0.85;
+    }
+
+    .inline-bar-target-line {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: var(--highlight);
+      z-index: 2;
+      box-shadow: 0 0 6px rgba(95,207,250,0.4);
+    }
+
+    .beat-badge {
+      display: inline-block;
+      background: rgba(95,207,250,0.12);
+      border: 1px solid rgba(95,207,250,0.25);
+      padding: 3px 10px;
+      border-radius: var(--rounded-full);
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--highlight);
+      white-space: nowrap;
+      min-width: 46px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .comparison-legend {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 16px;
+      font-size: 11px;
+      color: var(--on-dark-50);
+      font-weight: 600;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-swatch {
+      width: 14px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 2px;
+    }
+
+    .legend-swatch.target { background: rgba(111,76,158,0.35); }
+    .legend-swatch.actual { background: linear-gradient(90deg, var(--accent), var(--accent-deep)); }
+
+    .legend-line {
+      width: 14px;
+      height: 2px;
+      background: var(--highlight);
+      display: inline-block;
+      box-shadow: 0 0 4px rgba(95,207,250,0.4);
+    }
+
+    /* ── PROJECTION ── */
+    .projection-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .projection-grid h3 {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .projection-grid h3.conservador { color: var(--on-dark-55); }
+    .projection-grid h3.optimista { color: var(--accent); }
+
+    /* ── SUMMARY STRIP ── */
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .summary-box {
+      background: var(--glass-surface-stat);
+      border: 1px solid var(--glass-border-stat);
+      border-radius: var(--rounded-md);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.22s ease;
+    }
+
+    .summary-box:hover { transform: translateY(-3px); }
+
+    .summary-box .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--on-dark-50);
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+
+    .summary-box .val {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--on-dark);
+      letter-spacing: -0.02em;
+    }
+
+    .summary-box .sub {
+      font-size: 12px;
+      color: var(--on-dark-50);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .summary-box.accent-box {
+      border-color: rgba(253,50,123,0.25);
+    }
+    .summary-box.accent-box .val { color: var(--accent); }
+
+    .summary-box.highlight-box {
+      border-color: rgba(95,207,250,0.25);
+    }
+    .summary-box.highlight-box .val { color: var(--highlight); }
+
+    /* ── RECOMMENDATIONS ── */
+    .reco-list { list-style: none; }
+
+    .reco-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .reco-list li:last-child { border-bottom: none; }
+
+    .reco-number {
+      background: var(--accent);
+      color: var(--on-dark);
+      width: 28px;
+      height: 28px;
+      border-radius: var(--rounded-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .reco-content h4 {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--on-dark-90);
+      margin-bottom: 4px;
+    }
+
+    .reco-content p {
+      font-size: 13px;
+      color: var(--on-dark-75);
+      line-height: 1.5;
+    }
+
+    /* ── ANALYSIS INSIGHTS ── */
+    .insight {
+      margin-bottom: 18px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .insight:last-child { margin-bottom: 0; }
+
+    .insight h4 {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--on-dark-90);
+      margin-bottom: 4px;
+    }
+
+    .insight p {
+      font-size: 13px;
+      color: var(--on-dark-75);
+      line-height: 1.55;
+    }
+
+    /* ── RESUMEN EJECUTIVO ── */
+    .resumen-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .resumen-text p {
+      font-size: 15px;
+      color: var(--on-dark-90);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+
+    .resumen-text p strong {
+      color: var(--on-dark);
+      font-weight: 700;
+    }
+
+    .resumen-text p.result {
+      color: var(--on-dark-90);
+      font-weight: 600;
+    }
+
+    .resumen-text p.result em {
+      color: var(--accent);
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .datos-campana {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--outline-dark);
+      border-radius: var(--rounded-sm);
+      padding: 18px;
+    }
+
+    .datos-campana .datos-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--highlight);
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+
+    .datos-campana table td {
+      padding: 5px 0;
+      border: none;
+      font-size: 13px;
+    }
+
+    .datos-campana table td:first-child {
+      color: var(--on-dark-50);
+      padding-right: 12px;
+      font-weight: 500;
+    }
+
+    .datos-campana table td:last-child {
+      color: var(--on-dark-90);
+      font-weight: 700;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      border-top: 1px solid var(--outline-dark);
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .footer p {
+      font-size: 12px;
+      color: var(--on-dark-50);
+      font-weight: 500;
+    }
+
+    .footer .brand {
+      color: var(--highlight);
+      font-weight: 700;
+    }
+
+    .footer .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    /* ── CONCLUSION ── */
+    .conclusion-text {
+      font-size: 15px;
+      color: var(--on-dark-90);
+      line-height: 1.65;
+    }
+
+    .conclusion-text strong {
+      color: var(--highlight);
+      font-weight: 700;
+    }
+
+    /* ── STICKER SVGs ── */
+    .section-wrap {
+      position: relative;
+    }
+
+    .note-text {
+      font-size: 11px;
+      color: var(--on-dark-50);
+      margin-top: 8px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-overlay" id="loader">
+    <div class="loader-mark">
+      <div class="loader-ring"></div>
+      <div class="loader-ring alt"></div>
+      <img src="https://aigenci.sirv.com/AIGENCI/ISOTIPO%20Aigenci.png" alt="Aigenci">
+    </div>
+    <div class="loader-tag">
+      <span class="tag-dot"></span>
+      CARGANDO REPORTE
+      <span class="tag-dot"></span>
+    </div>
+  </div>
+
+  <div class="page-content" id="pageContent">
+
+  <!-- HEADER -->
+  <div class="header">
+    <!-- Stickers -->
+    <svg class="sticker sticker-float-y" style="top:12%; right:12%; animation-delay:-1s;" width="55" height="55" viewBox="0 0 60 60" fill="none">
+      <g transform="translate(30,30) rotate(15)">
+        <rect x="-4" y="-12" width="8" height="24" rx="4" fill="var(--highlight)" opacity="0.35"/>
+        <rect x="-12" y="-4" width="24" height="8" rx="4" fill="var(--highlight)" opacity="0.35"/>
+      </g>
+    </svg>
+    <svg class="sticker sticker-float-x" style="bottom:18%; right:5%; animation-delay:-3s;" width="50" height="28" viewBox="0 0 65 35" fill="none">
+      <path d="M5 28 Q15 5 25 18 Q35 31 45 12 Q55 -2 62 15" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:50%; left:6%; animation-delay:-3s;" width="40" height="40" viewBox="0 0 40 40" fill="none">
+      <rect x="17" y="6" width="6" height="28" rx="3" fill="var(--on-dark)" opacity="0.2"/>
+      <rect x="6" y="17" width="28" height="6" rx="3" fill="var(--on-dark)" opacity="0.2"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:30%; left:12%; animation-delay:-4s;" width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="6" fill="var(--highlight)" opacity="0.5"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:65%; right:14%; animation-delay:-2s;" width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--accent)" opacity="0.5"/>
+    </svg>
+
+    <div class="header-left">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <img src="https://aigenci.sirv.com/AIGENCI/ISOTIPO%20Aigenci.png" alt="Aigenci" style="height: 36px; width: 36px; object-fit: contain;">
+        <span style="color: var(--on-dark-50); font-size: 18px; font-weight: 300;">&times;</span>
+        <span style="font-family: 'Outfit', system-ui, sans-serif; font-size: 20px; font-weight: 900; color: var(--on-dark); letter-spacing: -0.02em;">THE CLUB PADEL</span>
+      </div>
+      <h1>Reporte de <em>Campa&ntilde;a</em></h1>
+      <p>Curso de P&aacute;del Alto Nivel &middot; Meta Ads &middot; Conversi&oacute;n Directa</p>
+    </div>
+    <div class="header-right">
+      <div class="badge">SUPER&Oacute; ESCENARIO OPTIMISTA</div>
+      <br>
+      <span class="meta">Per&iacute;odo: 20 d&iacute;as &middot; Inversi&oacute;n: $2,000 MXN</span>
+    </div>
+  </div>
+
+  <!-- RESUMEN EJECUTIVO -->
+  <div class="panel section-wrap" style="margin-bottom: 24px;">
+    <!-- Stickers -->
+    <svg class="sticker sticker-float-y" style="top:6%; right:4%; animation-delay:-1s;" width="55" height="55" viewBox="0 0 60 60" fill="none">
+      <g transform="translate(30,30) rotate(25)">
+        <rect x="-4" y="-12" width="8" height="24" rx="4" fill="var(--primary)" opacity="0.2"/>
+        <rect x="-12" y="-4" width="24" height="8" rx="4" fill="var(--primary)" opacity="0.2"/>
+      </g>
+    </svg>
+    <svg class="sticker sticker-float-x" style="bottom:10%; left:3%; animation-delay:-2s;" width="50" height="28" viewBox="0 0 65 35" fill="none">
+      <path d="M5 28 Q15 5 25 18 Q35 31 45 12 Q55 -2 62 15" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.18"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:40%; left:2%; animation-delay:-5s;" width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="6" fill="var(--accent)" opacity="0.2"/>
+    </svg>
+    <div class="section-header">
+      <div class="section-eyebrow"><span>Campa&ntilde;a Meta Ads</span></div>
+      <div class="section-bar"></div>
+      <h2 class="section-display">Resumen <em>Ejecutivo</em></h2>
+    </div>
+    <div class="resumen-grid">
+      <div class="resumen-text">
+        <p>
+          Campa&ntilde;a de conversi&oacute;n directa en Meta Ads para promover el <strong>Curso de P&aacute;del de Alto Nivel</strong> de THE CLUB PADEL en Puebla. Presupuesto diario de $100 MXN durante 20 d&iacute;as. El objetivo: captar inscripciones al curso mensual de $3,200 MXN, con un LTV esperado de al menos 4 meses por alumno.
+        </p>
+        <p class="result">
+          La campa&ntilde;a super&oacute; el escenario optimista. Se lograron <em>6 inscripciones</em> contra una meta optimista de 5 y una conservadora de 4. Esto posiciona al curso como un producto viable para escalar con inversi&oacute;n publicitaria recurrente.
+        </p>
+      </div>
+      <div class="datos-campana">
+        <div class="datos-title">Datos de campa&ntilde;a</div>
+        <table>
+          <tr><td>Canal</td><td>Meta Ads</td></tr>
+          <tr><td>Tipo</td><td>Conversi&oacute;n directa</td></tr>
+          <tr><td>Duraci&oacute;n</td><td>20 d&iacute;as</td></tr>
+          <tr><td>Inversi&oacute;n</td><td>$2,000 MXN</td></tr>
+          <tr><td>Producto</td><td>$3,200 MXN/mes</td></tr>
+          <tr><td>LTV esperado</td><td>4 meses</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI CARDS -->
+  <div class="kpi-row" style="position: relative;">
+    <svg class="sticker sticker-float-y" style="top:-20px; left:-16px; animation-delay:-3s;" width="22" height="22" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="7" fill="var(--highlight)" opacity="0.35"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="bottom:-14px; right:-10px; animation-delay:-5s;" width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--accent)" opacity="0.3"/>
+    </svg>
+    <div class="kpi-card">
+      <div class="kpi-label">Inscripciones</div>
+      <div class="kpi-value">6</div>
+      <div class="kpi-sub">Meta optimista: 5</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Ingreso Mes 1</div>
+      <div class="kpi-value">$19,200</div>
+      <div class="kpi-sub">MXN</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">CPA</div>
+      <div class="kpi-value">$333</div>
+      <div class="kpi-sub">MXN por inscripci&oacute;n</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">ROAS Mes 1</div>
+      <div class="kpi-value">9.6x</div>
+      <div class="kpi-sub">LTV proyectado: 38.4x</div>
+    </div>
+  </div>
+
+  <!-- MAIN 2-COLUMN GRID -->
+  <div class="main-grid">
+
+    <!-- FULL WIDTH: Resultados vs Escenarios -->
+    <div class="panel full-width section-wrap">
+      <!-- Stickers -->
+      <svg class="sticker sticker-float-y" style="top:8%; right:3%; animation-delay:-2s;" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <rect x="17" y="6" width="6" height="28" rx="3" fill="var(--on-dark)" opacity="0.12"/>
+        <rect x="6" y="17" width="28" height="6" rx="3" fill="var(--on-dark)" opacity="0.12"/>
+      </svg>
+      <svg class="sticker sticker-float-y" style="bottom:12%; left:2%; animation-delay:-4s;" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <circle cx="9" cy="9" r="6" fill="var(--accent)" opacity="0.35"/>
+      </svg>
+      <svg class="sticker sticker-float-x" style="bottom:5%; right:8%; animation-delay:-1s;" width="55" height="28" viewBox="0 0 65 35" fill="none">
+        <path d="M5 28 Q15 5 25 18 Q35 31 45 12 Q55 -2 62 15" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.2"/>
+      </svg>
+      <svg class="sticker sticker-float-y" style="top:40%; left:1%; animation-delay:-5s;" width="24" height="24" viewBox="0 0 28 28" fill="none">
+        <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--highlight)" opacity="0.2"/>
+      </svg>
+
+      <div class="section-header">
+        <div class="section-eyebrow"><span>Rendimiento</span></div>
+        <div class="section-bar"></div>
+        <h2 class="section-display">Resultados vs. <em>Escenarios</em></h2>
+      </div>
+      <div class="comparison-legend">
+        <div class="legend-item"><span class="legend-swatch target"></span> Meta optimista</div>
+        <div class="legend-item"><span class="legend-swatch actual"></span> Resultado real</div>
+        <div class="legend-item"><span class="legend-line"></span> L&iacute;nea de meta</div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 140px;">M&eacute;trica</th>
+            <th style="width: 100px;">Conservador</th>
+            <th style="width: 100px;">Optimista</th>
+            <th style="width: 100px;">Real</th>
+            <th>Comparativa</th>
+            <th style="width: 80px; text-align: center;">vs Meta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inscripciones</td>
+            <td>4</td>
+            <td>5</td>
+            <td class="highlight">6</td>
+            <td class="bar-cell">
+              <div class="inline-bar-wrapper">
+                <div class="inline-bar-track">
+                  <div class="inline-bar-target" style="width: 83%;"></div>
+                  <div class="inline-bar-actual" style="width: 100%;"></div>
+                  <div class="inline-bar-target-line" style="left: 83%;"></div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align: center;"><span class="beat-badge">+20%</span></td>
+          </tr>
+          <tr>
+            <td>Ingreso mes 1</td>
+            <td>$12,800</td>
+            <td>$16,000</td>
+            <td class="highlight">$19,200</td>
+            <td class="bar-cell">
+              <div class="inline-bar-wrapper">
+                <div class="inline-bar-track">
+                  <div class="inline-bar-target" style="width: 83%;"></div>
+                  <div class="inline-bar-actual" style="width: 100%;"></div>
+                  <div class="inline-bar-target-line" style="left: 83%;"></div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align: center;"><span class="beat-badge">+20%</span></td>
+          </tr>
+          <tr>
+            <td>CPA <span style="font-size:11px; color:var(--on-dark-50);">(menor = mejor)</span></td>
+            <td>$500</td>
+            <td>$400</td>
+            <td class="highlight">$333</td>
+            <td class="bar-cell">
+              <div class="inline-bar-wrapper">
+                <div class="inline-bar-track">
+                  <div class="inline-bar-target" style="width: 100%;"></div>
+                  <div class="inline-bar-actual" style="width: 83%;"></div>
+                  <div class="inline-bar-target-line" style="left: 100%;"></div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align: center;"><span class="beat-badge">-17%</span></td>
+          </tr>
+          <tr>
+            <td>ROAS mes 1</td>
+            <td>6.4x</td>
+            <td>8.0x</td>
+            <td class="highlight">9.6x</td>
+            <td class="bar-cell">
+              <div class="inline-bar-wrapper">
+                <div class="inline-bar-track">
+                  <div class="inline-bar-target" style="width: 83%;"></div>
+                  <div class="inline-bar-actual" style="width: 100%;"></div>
+                  <div class="inline-bar-target-line" style="left: 83%;"></div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align: center;"><span class="beat-badge">+20%</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- LEFT: Métricas de Rentabilidad -->
+    <div class="panel section-wrap">
+      <svg class="sticker sticker-float-y" style="top:8%; right:5%; animation-delay:-2s;" width="30" height="30" viewBox="0 0 40 40" fill="none">
+        <rect x="17" y="6" width="6" height="28" rx="3" fill="var(--on-dark)" opacity="0.08"/>
+        <rect x="6" y="17" width="28" height="6" rx="3" fill="var(--on-dark)" opacity="0.08"/>
+      </svg>
+      <div class="section-header">
+        <div class="section-eyebrow"><span>Rentabilidad</span></div>
+        <div class="section-bar"></div>
+        <h2 class="section-display">M&eacute;tricas <em>Clave</em></h2>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Inversi&oacute;n total</td>
+            <td class="value">$2,000 MXN</td>
+          </tr>
+          <tr>
+            <td>Inscripciones logradas</td>
+            <td class="value">6</td>
+          </tr>
+          <tr>
+            <td>Ingreso mes 1</td>
+            <td class="value">$19,200 MXN</td>
+          </tr>
+          <tr>
+            <td>CPA</td>
+            <td class="value">$333 MXN</td>
+          </tr>
+          <tr>
+            <td>ROAS mes 1</td>
+            <td class="value">9.6x</td>
+          </tr>
+          <tr>
+            <td>Ingreso proyectado LTV (4 meses)</td>
+            <td class="highlight">$76,800 MXN</td>
+          </tr>
+          <tr>
+            <td>ROAS proyectado LTV</td>
+            <td class="highlight">38.4x</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- RIGHT: Análisis -->
+    <div class="panel section-wrap">
+      <svg class="sticker sticker-float-y" style="bottom:8%; right:4%; animation-delay:-4s;" width="24" height="24" viewBox="0 0 28 28" fill="none">
+        <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--highlight)" opacity="0.2"/>
+      </svg>
+      <svg class="sticker sticker-float-y" style="top:10%; left:3%; animation-delay:-1s;" width="16" height="16" viewBox="0 0 18 18" fill="none">
+        <circle cx="9" cy="9" r="6" fill="var(--accent)" opacity="0.2"/>
+      </svg>
+      <div class="section-header">
+        <div class="section-eyebrow"><span>An&aacute;lisis</span></div>
+        <div class="section-bar"></div>
+        <h2 class="section-display">Hallazgos <em>Clave</em></h2>
+      </div>
+      <div class="insight">
+        <h4>Hay demanda real</h4>
+        <p>Con $2,000 de inversi&oacute;n se llenaron 6 lugares. El mercado de p&aacute;del en Puebla acepta el precio premium de $3,200/mes.</p>
+      </div>
+      <div class="insight">
+        <h4>CPA sostenible</h4>
+        <p>$333 de adquisici&oacute;n para un cliente de $3,200/mes ($12,800+ LTV). Margen amplio para escalar.</p>
+      </div>
+      <div class="insight">
+        <h4>Convierte sin historial</h4>
+        <p>Primera campa&ntilde;a, sin referencia previa. Superar el escenario optimista indica espacio para optimizar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTION SECTION -->
+  <div class="panel full-width section-wrap" style="margin-bottom: 24px;">
+    <!-- Stickers -->
+    <svg class="sticker sticker-float-y" style="top:5%; left:3%; animation-delay:-1s;" width="50" height="50" viewBox="0 0 60 60" fill="none">
+      <g transform="translate(30,30) rotate(-20)">
+        <rect x="-4" y="-12" width="8" height="24" rx="4" fill="var(--highlight)" opacity="0.25"/>
+        <rect x="-12" y="-4" width="24" height="8" rx="4" fill="var(--highlight)" opacity="0.25"/>
+      </g>
+    </svg>
+    <svg class="sticker sticker-float-x" style="bottom:8%; right:4%; animation-delay:-4s;" width="55" height="28" viewBox="0 0 65 35" fill="none">
+      <path d="M5 28 Q15 5 25 18 Q35 31 45 12 Q55 -2 62 15" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.3"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:14%; right:6%; animation-delay:-2s;" width="30" height="30" viewBox="0 0 40 40" fill="none">
+      <rect x="17" y="6" width="6" height="28" rx="3" fill="var(--on-dark)" opacity="0.12"/>
+      <rect x="6" y="17" width="28" height="6" rx="3" fill="var(--on-dark)" opacity="0.12"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="bottom:20%; left:4%; animation-delay:-3s;" width="16" height="16" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="6" fill="var(--accent)" opacity="0.3"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:50%; right:3%; animation-delay:-5s;" width="24" height="24" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--highlight)" opacity="0.18"/>
+    </svg>
+
+    <div class="section-header">
+      <div class="section-eyebrow"><span>Proyecci&oacute;n</span></div>
+      <div class="section-bar"></div>
+      <h2 class="section-display">Campa&ntilde;a <em>Permanente</em></h2>
+      <p class="section-sub">Proyecci&oacute;n a 6 meses con inversi&oacute;n de $3,000 MXN/mes</p>
+    </div>
+    <div class="projection-grid">
+      <div>
+        <h3 class="conservador">Escenario Conservador &mdash; 4 inscritos/mes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Inversi&oacute;n</th>
+              <th>Nuevos</th>
+              <th>Activos</th>
+              <th>Ingreso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>$3,000</td><td>4</td><td>4</td><td>$12,800</td></tr>
+            <tr><td>2</td><td>$3,000</td><td>4</td><td>8</td><td>$25,600</td></tr>
+            <tr><td>3</td><td>$3,000</td><td>4</td><td>12</td><td>$38,400</td></tr>
+            <tr><td>4</td><td>$3,000</td><td>4</td><td>12*</td><td>$38,400</td></tr>
+            <tr><td>5</td><td>$3,000</td><td>4</td><td>12*</td><td>$38,400</td></tr>
+            <tr><td>6</td><td>$3,000</td><td>4</td><td>12*</td><td>$38,400</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 class="optimista">Escenario Optimista &mdash; 6 inscritos/mes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Inversi&oacute;n</th>
+              <th>Nuevos</th>
+              <th>Activos</th>
+              <th>Ingreso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>$3,000</td><td>6</td><td>6</td><td>$19,200</td></tr>
+            <tr><td>2</td><td>$3,000</td><td>6</td><td>12</td><td>$38,400</td></tr>
+            <tr><td>3</td><td>$3,000</td><td>6</td><td>18</td><td>$57,600</td></tr>
+            <tr><td>4</td><td>$3,000</td><td>6</td><td>18*</td><td>$57,600</td></tr>
+            <tr><td>5</td><td>$3,000</td><td>6</td><td>18*</td><td>$57,600</td></tr>
+            <tr><td>6</td><td>$3,000</td><td>6</td><td>18*</td><td>$57,600</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="note-text">*A partir del mes 4, los alumnos del primer grupo cumplen su LTV de 4 meses. Activos se estabilizan asumiendo retenci&oacute;n constante.</p>
+  </div>
+
+  <!-- SUMMARY STRIP -->
+  <div class="summary-strip">
+    <div class="summary-box">
+      <div class="label">Inversi&oacute;n 6 meses</div>
+      <div class="val">$18,000</div>
+      <div class="sub">MXN (ambos escenarios)</div>
+    </div>
+    <div class="summary-box accent-box">
+      <div class="label">Ingreso Acum. Conservador</div>
+      <div class="val">$192,000</div>
+      <div class="sub">ROAS 10.7x</div>
+    </div>
+    <div class="summary-box highlight-box">
+      <div class="label">Ingreso Acum. Optimista</div>
+      <div class="val">$288,000</div>
+      <div class="sub">ROAS 16.0x</div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDATIONS -->
+  <div class="panel full-width section-wrap" style="margin-bottom: 24px;">
+    <svg class="sticker sticker-float-y" style="top:10%; right:3%; animation-delay:-1s;" width="50" height="50" viewBox="0 0 60 60" fill="none">
+      <g transform="translate(30,30) rotate(-15)">
+        <rect x="-4" y="-12" width="8" height="24" rx="4" fill="var(--highlight)" opacity="0.2"/>
+        <rect x="-12" y="-4" width="24" height="8" rx="4" fill="var(--highlight)" opacity="0.2"/>
+      </g>
+    </svg>
+    <svg class="sticker sticker-float-x" style="bottom:12%; left:4%; animation-delay:-3s;" width="45" height="25" viewBox="0 0 65 35" fill="none">
+      <path d="M5 28 Q15 5 25 18 Q35 31 45 12 Q55 -2 62 15" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.25"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="top:50%; right:6%; animation-delay:-4s;" width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="6" fill="var(--highlight)" opacity="0.25"/>
+    </svg>
+    <div class="section-header">
+      <div class="section-eyebrow"><span>Siguientes Pasos</span></div>
+      <div class="section-bar"></div>
+      <h2 class="section-display">Recomendaciones</h2>
+    </div>
+    <ul class="reco-list">
+      <li>
+        <div class="reco-number">1</div>
+        <div class="reco-content">
+          <h4>Mantener campa&ntilde;a activa permanentemente</h4>
+          <p>Presupuesto fijo de $3,000 MXN/mes para armar un grupo nuevo de 5-6 integrantes cada mes.</p>
+        </div>
+      </li>
+      <li>
+        <div class="reco-number">2</div>
+        <div class="reco-content">
+          <h4>Implementar CRM para seguimiento comercial</h4>
+          <p>Registro autom&aacute;tico de leads, seguimiento estructurado, medici&oacute;n de conversi&oacute;n y retenci&oacute;n, automatizaci&oacute;n de mensajes.</p>
+        </div>
+      </li>
+      <li>
+        <div class="reco-number">3</div>
+        <div class="reco-content">
+          <h4>Optimizar creativos con data obtenida</h4>
+          <p>Iterar creativos, audiencias y copy con los aprendizajes de esta primera campa&ntilde;a para mejorar rendimiento.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="panel full-width section-wrap" style="margin-bottom: 24px;">
+    <svg class="sticker sticker-float-y" style="top:15%; right:5%; animation-delay:-2s;" width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,2 17.5,10.5 26,10.5 19.5,16 21.5,25 14,19.5 6.5,25 8.5,16 2,10.5 10.5,10.5" fill="var(--accent)" opacity="0.25"/>
+    </svg>
+    <svg class="sticker sticker-float-y" style="bottom:15%; left:3%; animation-delay:-5s;" width="20" height="20" viewBox="0 0 18 18" fill="none">
+      <circle cx="9" cy="9" r="7" fill="var(--highlight)" opacity="0.2"/>
+    </svg>
+    <div class="section-header">
+      <div class="section-eyebrow"><span>Cierre</span></div>
+      <div class="section-bar"></div>
+      <h2 class="section-display">Conclusi&oacute;n</h2>
+    </div>
+    <p class="conclusion-text">
+      La primera campa&ntilde;a fue un &eacute;xito claro: super&oacute; el mejor escenario con <strong>ROAS de 9.6x</strong>. El producto tiene demanda, el precio es aceptado y el canal funciona. El siguiente paso es sistematizar: presupuesto fijo mensual, CRM y optimizaci&oacute;n continua. Con $3,000/mes, THE CLUB PADEL puede mantener grupos de 4-6 nuevos alumnos y una base estable de <strong>12-18 activos en 3-4 meses</strong>.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <img src="https://aigenci.sirv.com/AIGENCI/LOGO%20Aigenci_bco_2026.png" alt="Aigenci" style="height: 28px; margin: 0 auto 12px; display: block; opacity: 0.7;">
+    <p>Reporte de Campa&ntilde;a Meta Ads <span class="dot"></span> THE CLUB PADEL Curso de P&aacute;del Alto Nivel <span class="dot"></span> Puebla, M&eacute;xico</p>
+  </div>
+
+  </div><!-- /page-content -->
+
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('loader').classList.add('hidden');
+        document.getElementById('pageContent').classList.add('visible');
+      }, 2200);
+    });
+  </script>
+
+</body>
+</html>
