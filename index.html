@@ -860,8 +860,41 @@
         gap: 10px;
       }
 
-      .panel { padding: 20px 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .panel { padding: 20px 16px; }
       .panel table { min-width: 480px; }
+
+      .table-scroll-wrap {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .table-scroll-wrap::after {
+        content: 'Desliza →';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 64px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 10px 8px 0 0;
+        font-family: 'DM Sans', system-ui, sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: var(--highlight);
+        background: linear-gradient(to right, transparent, rgba(46,35,64,0.85) 60%);
+        pointer-events: none;
+        z-index: 3;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+
+      .table-scroll-wrap.scrolled::after {
+        opacity: 0;
+      }
 
       table { font-size: 13px; }
       th, td { padding: 8px 10px; white-space: nowrap; }
@@ -1059,6 +1092,7 @@
         <div class="legend-item"><span class="legend-swatch actual"></span> Resultado real</div>
         <div class="legend-item"><span class="legend-line"></span> L&iacute;nea de meta</div>
       </div>
+      <div class="table-scroll-wrap">
       <table>
         <thead>
           <tr>
@@ -1137,6 +1171,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <!-- LEFT: Métricas de Rentabilidad -->
@@ -1150,6 +1185,7 @@
         <div class="section-bar"></div>
         <h2 class="section-display">M&eacute;tricas <em>Clave</em></h2>
       </div>
+      <div class="table-scroll-wrap">
       <table>
         <tbody>
           <tr>
@@ -1182,6 +1218,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <!-- RIGHT: Análisis -->
@@ -1244,6 +1281,7 @@
     <div class="projection-grid">
       <div>
         <h3 class="conservador">Escenario Conservador &mdash; 4 inscritos/mes</h3>
+        <div class="table-scroll-wrap">
         <table>
           <thead>
             <tr>
@@ -1263,9 +1301,11 @@
             <tr><td>6</td><td>$3,000</td><td>4</td><td>12*</td><td>$38,400</td></tr>
           </tbody>
         </table>
+        </div>
       </div>
       <div>
         <h3 class="optimista">Escenario Optimista &mdash; 6 inscritos/mes</h3>
+        <div class="table-scroll-wrap">
         <table>
           <thead>
             <tr>
@@ -1285,6 +1325,7 @@
             <tr><td>6</td><td>$3,000</td><td>6</td><td>18*</td><td>$57,600</td></tr>
           </tbody>
         </table>
+        </div>
       </div>
     </div>
     <p class="note-text">*A partir del mes 4, los alumnos del primer grupo cumplen su LTV de 4 meses. Activos se estabilizan asumiendo retenci&oacute;n constante.</p>
@@ -1385,6 +1426,13 @@
         document.getElementById('loader').classList.add('hidden');
         document.getElementById('pageContent').classList.add('visible');
       }, 2200);
+
+      document.querySelectorAll('.table-scroll-wrap').forEach(function(wrap) {
+        wrap.addEventListener('scroll', function() {
+          if (wrap.scrollLeft > 10) wrap.classList.add('scrolled');
+          else wrap.classList.remove('scrolled');
+        });
+      });
     });
   </script>
 
